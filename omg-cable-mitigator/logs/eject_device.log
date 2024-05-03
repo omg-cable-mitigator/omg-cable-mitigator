@@ -1,0 +1,11 @@
+eject_device init
+USB device detached with pid: 20391
+Exception:  [Errno 10] No child processes
+eject_device init
+USB device detached with pid: 21073
+eject_device init
+USB device detached with pid: 23148
+eject_device init
+USB device detached with pid: 23414
+eject_device init
+USB device detached with pid: 23488

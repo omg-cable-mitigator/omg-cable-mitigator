@@ -1,0 +1,27 @@
+{
+    "base_path": "/path/to/your/project/root",
+    "log_paths": {
+      "gui_log": "logs/gui.log",
+      "eject_log": "logs/eject_device.log"
+    },
+    "file_paths": {
+      "gui_pid": "gui_pid.txt",
+      "command_txt": "command.txt",
+      "pin_txt": "pin.txt",
+      "security_mode_txt": "security-mode.txt"
+    },
+    "icon_paths": {
+      "default_icon": "icons/omg-logo-notext-200x200.png",
+      "default_icon_green": "icons/omg-logo-notext-green-200x200.png",
+      "options_icon": "icons/omg-logo-notext-100x100.png",
+      "finger_icons": [
+        "icons/omg-logo-notext-200x200-finger1.png",
+        "icons/omg-logo-notext-200x200-finger2.png"
+      ]
+    },
+    "user_settings": {
+      "username": "user",
+      "display": ":0"
+    }
+  }
+  
