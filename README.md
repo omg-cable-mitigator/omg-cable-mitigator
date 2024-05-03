@@ -3,7 +3,7 @@
   
 <b>DVGC25 - Bachelor Thesis</b>
 
-![omg-logo-notext-200x200](https://github.com/vvijk/omg-cable-mitigator/assets/91020676/fc1adb23-d59d-48d1-9985-0894a9d55137)
+![omg-logo-notext-200x200](https://github.com/omg-cable-mitigator/omg-cable-mitigator/blob/main/src/icons/omg-logo-notext-200x200.png)
   
 </div>
 
