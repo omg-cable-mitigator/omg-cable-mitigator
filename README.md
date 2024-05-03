@@ -11,9 +11,11 @@
 
 * Step 1: Clone the repository
 ```bash
-  git clone https://github.com/vvijk/omg-cable-mitigator.git 
+  git clone https://github.com/omg-cable-mitigator/omg-cable-mitigator.git
 ```
-* Step 2: Create service file for background running
+* Step 2: Update ```config.example.json``` file with you specific paths and rename it to ```config.json```
+  
+* Step 3: Create service file for background running
 ```bash
 sudo touch /etc/systemd/system/testing.service && sudo bash -c 'cat << EOF > /etc/systemd/system/testing.service
 [Unit]
@@ -21,14 +23,14 @@ Description=OMG Cable Mitigator
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 path/to/the/program/omg-cable-mitigator/main.py
+ExecStart=/usr/bin/python3 path/to/the/program/omg-cable-mitigator/src/main.py
 
 [Install]
 WantedBy=multi-user.target
 EOF'
 ```
 
-* Step 3: Start the service file for background running
+* Step 4: Start the service file for background running
 ```bash
 sudo /path/to/the/program/reset.sh
 ```
