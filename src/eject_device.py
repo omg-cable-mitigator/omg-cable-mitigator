@@ -10,9 +10,8 @@ with open('config.json', 'r') as config_file:
 
 # Construct file paths using os.path.join
 base_path = config['base_path']
-eject_log_path = os.path.join(base_path, config['eject_log_path'])
-gui_pid_path = os.path.join(base_path, config['gui_pid_path'])
-
+eject_log_path = os.path.join(base_path, config['log_paths']['eject_log'])
+gui_pid_path = os.path.join(base_path, config['file_paths']['gui_pid'])
 
 
 def get_gui_pid():
