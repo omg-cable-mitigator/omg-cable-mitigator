@@ -13,11 +13,11 @@
 ```bash
   git clone https://github.com/omg-cable-mitigator/omg-cable-mitigator.git
 ```
-* Step 2: Update ```config.example.json``` file with you specific paths and rename it to ```config.json```
+* Step 2: Update the ```base_path``` inside the ```config.example.json``` file with you specific path and rename it to ```config.json```
   
 * Step 3: Create service file for background running
 ```bash
-sudo touch /etc/systemd/system/testing.service && sudo bash -c 'cat << EOF > /etc/systemd/system/testing.service
+sudo touch /lib/systemd/system/omg-cable-mitigator.service && sudo bash -c 'cat << EOF > /lib/systemd/system/omg-cable-mitigator.service
 [Unit]
 Description=OMG Cable Mitigator
 
@@ -32,7 +32,7 @@ EOF'
 
 * Step 4: Start the service file for background running
 ```bash
-sudo /path/to/the/program/reset.sh
+sudo bash /path/to/the/program/reset.sh
 ```
 
 ## Authors
