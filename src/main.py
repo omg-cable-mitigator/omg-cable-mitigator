@@ -10,8 +10,8 @@ with open('config.json', 'r') as config_file:
     config = json.load(config_file)
 
 base_path = config['base_path']
-username = config['username']
-display = config['display']
+username = config['user_settings']['username']
+display = config['user_settings']['display']
 
 # Define file paths
 command_path = os.path.join(base_path, 'command.txt')
