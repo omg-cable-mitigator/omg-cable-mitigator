@@ -10,17 +10,16 @@ with open('config.json', 'r') as config_file:
 
 # Construct file paths using os.path.join
 base_path = config['base_path']
-log_path = os.path.join(base_path, config['log_path'])
-eject_log_path = os.path.join(base_path, config['eject_log_path'])
-gui_pid_path = os.path.join(base_path, config['gui_pid_path'])
-command_txt_path = os.path.join(base_path, config['command_txt_path'])
-pin_txt_path = os.path.join(base_path, config['pin_txt_path'])
-security_mode_path = os.path.join(base_path, config['security_mode_path'])
-icon_path = os.path.join(base_path, config['icon_path'])
-default_icon = os.path.join(icon_path, config['default_icon'])
-default_icon_green = os.path.join(icon_path, config['default_icon_green'])
-options_icon = os.path.join(icon_path, config['options_icon'])
-finger_icons = [os.path.join(icon_path, fname) for fname in config['finger_icons']]
+log_path = os.path.join(base_path, config['log_paths']['gui_log'])
+eject_log_path = os.path.join(base_path, config['log_paths']['eject_log'])
+gui_pid_path = os.path.join(base_path, config['file_paths']['gui_pid'])
+command_txt_path = os.path.join(base_path, config['file_paths']['command_txt'])
+pin_txt_path = os.path.join(base_path, config['file_paths']['pin_txt'])
+security_mode_path = os.path.join(base_path, config['file_paths']['security_mode_txt'])
+default_icon = os.path.join(base_path, config['icon_paths']['default_icon'])
+default_icon_green = os.path.join(base_path, config['icon_paths']['default_icon_green'])
+options_icon = os.path.join(base_path, config['icon_paths']['options_icon'])
+finger_icons = [os.path.join(base_path, fname) for fname in config['icon_paths']['finger_icons']]
 
 animation_active = False
 current_image_index = 0
